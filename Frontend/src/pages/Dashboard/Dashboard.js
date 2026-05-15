@@ -36,7 +36,7 @@ import { useNavigate } from "react-router-dom";
                 });
                 if(response.ok){
                     setEmployees((previousEmployees) => 
-                        previousEmployees.filter((employee) => employee.id != employeeId))
+                        previousEmployees.filter((employee) => employee.id !== employeeId))
                 }
                 console.log(`Employee with Id ${employeeId} Deleted Successfully`);
             }

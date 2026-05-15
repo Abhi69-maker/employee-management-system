@@ -6,7 +6,7 @@ import { useState } from "react";
 
 import Button from "react-bootstrap/Button";
 
-import { useNavigate } from "react-router-dom";
+
 
 import axios from "axios";
 
@@ -34,7 +34,7 @@ const PostUser = () => {
         });
     };
 
-    const navigate = useNavigate();
+
 
     const handleSubmit = async (e) => {
 
