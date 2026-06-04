@@ -53,7 +53,7 @@ const UpdateUser = () => {
 
             const response = await axios.get(
 
-                `http://localhost:8094/api/employee/${id}`
+                `https://employee-management-system-1-3w4p.onrender.com/api/employee/${id}`
 
             );
 
@@ -83,7 +83,7 @@ const UpdateUser = () => {
         e.preventDefault();
 
         try{
-            const response = await fetch(`http://localhost:8094/api/employee/${id}`,{
+            const response = await fetch(`http://https://employee-management-system-1-3w4p.onrender.com:8094/api/employee/${id}`,{
                 method: 'PATCH',
                 headers: {
                     "Content-Type" : "application/json"
