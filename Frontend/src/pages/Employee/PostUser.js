@@ -46,7 +46,7 @@ const PostUser = () => {
 
                 "https://employee-management-system-1-3w4p.onrender.com/api/employee",
 
-                formData
+                
 
             );
 
