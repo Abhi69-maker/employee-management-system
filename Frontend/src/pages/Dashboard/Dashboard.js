@@ -14,7 +14,7 @@ import { useNavigate } from "react-router-dom";
         useEffect(() =>{
             const fetchEmployees = async () => {
                 try{
-                    const response = await fetch("http://localhost:8090/api/employees");
+                    const response = await fetch("http://localhost:8094/api/employees");
                     const data = await response.json();
                     setEmployees(data);
                 }
@@ -30,7 +30,7 @@ import { useNavigate } from "react-router-dom";
 
         const handleDelete = async (employeeId) => {
             try{
-                const response = await fetch(`http://localhost:8090/api/employee/${employeeId}`,{
+                const response = await fetch(`http://localhost:8094/api/employee/${employeeId}`,{
                     method: 'DELETE',
 
                 });
