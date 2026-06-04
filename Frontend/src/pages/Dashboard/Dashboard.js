@@ -14,7 +14,7 @@ import { useNavigate } from "react-router-dom";
         useEffect(() =>{
             const fetchEmployees = async () => {
                 try{
-                    const response = await fetch("http://localhost:https://employee-management-system-1-3w4p.onrender.com/api/employees");
+                    const response = await fetch("https://employee-management-system-1-3w4p.onrender.com/api/employees");
                     const data = await response.json();
                     setEmployees(data);
                 }
