@@ -51,11 +51,18 @@ const UpdateUser = () => {
 
         try {
 
-            const response = await axios.get(
-
-                `https://employee-management-system-1-3w4p.onrender.com/api/employee/${id}`
-
+            const response = await fetch(
+                `https://employee-management-system-1-3w4p.onrender.com/api/employee/${id}`,
+                {
+                    method: "PATCH",
+                    headers: {
+                    "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(formData),
+                }
             );
+
+            
 
             console.log(response.data);
 
