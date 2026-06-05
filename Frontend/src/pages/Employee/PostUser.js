@@ -45,6 +45,7 @@ const PostUser = () => {
             const response = await axios.post(
 
                 "https://employee-management-system-1-3w4p.onrender.com/api/employee",
+                formData
 
                 
 
